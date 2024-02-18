@@ -1,4 +1,14 @@
-# sh_install-LEMP
-# Install Linux Nginx MariaDB PHP-fpm
+# Install shell script Unix OS.
+ ## 1.  Установка Web Servera LAMP
 
-* Install Automatich web-server
+* Linux
+
+* Nginx
+
+* MariaDB
+
+* PHP-FPM
+
+  ***
+
+  
