@@ -72,52 +72,7 @@ else
 		#exit 1
 fi
 sleep 1
-read   -p "$(echo -en ${BGGREEN}${Black}Настраевам базу данных.?[Y/N]:${NORMAL}) " maria
-if [[ $maria =~ ^[Yy]$ ]];
-     then
-     sudo mysql_secure_installation
-		#exit 0
-fi
-sleep 1
-read   -p "$(echo -en ${BGGREEN}${Black}Настраевам php8?[Y/N]:${NORMAL}) " php8
-if [[ $php8 =~ ^[Yy]$ ]];
-     then
-	sudo rm -rf /etc/nginx/sites-enable/default
-    sudo touch /etc/nginx/conf.d/default.conf
-	sudo cat > /etc/nginx/conf.d/default.conf <<EOF
-server {
 
-	listen 80:
-	l
-
-	isten [::]:80;
-	server_name _;
-	root /usr/share/nginx/html/;
-	index index.php index.html index.htm index.nginx-debian.html;
-	location / {
-		try_files $uri $uri/ /index.php;
-}
-
-location ~ \.php$ {
-	fastcgi_pass unix:/run/php/php8.2-fpm.sock;
-	fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_scrip_name;
-	include fastcgi_params;
-	include snippet/fastcgi-php.conf;
-}
-#a long browser cache lifetime can speed up repeat visits to your page
-	location ~* \.(jpg|jpeg|gif|png|webp|svg|woff|woff2|ttf|css|js|ico|xml)$ {
-	access_log 		off;
-	log_not+found 	off;
-	expires 		360d;
-}
-#disable access to hidden files
-	location ~/\.ht {
-	access_log 		off;
-	log_not_found 	off;
-	deny 			all;
- }
-}
-EOF
 
 sleep 1
 sudo nginx -t

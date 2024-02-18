@@ -22,7 +22,7 @@ if [ $word == LEMP ]; then
       sudo apt install curl wget -y
       mkdir ~/shell/
       cd ~/shell/
-      wget https://raw.githubusercontent.com/soraxdev/test/main/install.sh
+      wget https://raw.githubusercontent.com/soraxdev/unixscript/main/src/lemp.sh
       sudo chmod u+x install.sh
       ./install.sh
 fi
