@@ -12,25 +12,20 @@ Install shell script Unix OS.
 
   ***
 
-### Установка 
+  ### Установка 
 
-* Cкачиваем скрипт 
+  * Cкачиваем скрипт 
 
-```bash
-wget https://raw.githubusercontent.com/soraxdev/unixscript/main/start.sh	
-```
+  ```bash
+  wget https://raw.githubusercontent.com/soraxdev/unixscript/main/start.sh	
+  ```
 
-* Cкачиваем его в домашнюю директорию  */home/user/* 
-
-* Даем права на исполнение скрипта. 
-
-* Запускаем скрипт. 
-
-* После чего выбираем в диалогом окне что не обходимо установить.
-
-* И дожидаемся установки.
-
-* [https://github.com/soraxdev/unixscript/blob/main/manual/manual.md]: 
+  * Cкачиваем его в домашнюю директорию  */home/user/* 
+  * Даем права на исполнение скрипта. 
+  * Запускаем скрипт. 
+  * После чего выбираем в диалогом окне что не обходимо установить.
+  * Дожидаемся установки
+  * [Ручная Установка](https://github.com/soraxdev/unixscript/blob/main/manual/manual.md)
 
 ```bash
 sudo chmod u+x start.sh
