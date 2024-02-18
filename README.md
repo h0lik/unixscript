@@ -21,10 +21,16 @@ wget https://raw.githubusercontent.com/soraxdev/unixscript/main/start.sh
 ```
 
 * Cкачиваем его в домашнюю директорию  */home/user/* 
+
 * Даем права на исполнение скрипта. 
+
 * Запускаем скрипт. 
+
 * После чего выбираем в диалогом окне что не обходимо установить.
+
 * И дожидаемся установки.
+
+* [https://github.com/soraxdev/unixscript/blob/main/manual/manual.md]: 
 
 ```bash
 sudo chmod u+x start.sh
