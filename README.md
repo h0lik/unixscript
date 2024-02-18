@@ -1,18 +1,6 @@
-Install shell script Unix OS.
+# Install shell script Unix OS.
 
  ## 1.  Установка Web Servera LAMP
-
-* Linux
-
-* Nginx
-
-* MariaDB
-
-* PHP-FPM
-
-  ***
-
-### Установка 
 
 * Cкачиваем скрипт 
 * Cкачиваем его в домашнюю директорию  */home/user/* 
